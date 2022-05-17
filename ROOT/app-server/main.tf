@@ -7,5 +7,5 @@ module "app-vpc" {
 }
 
 module "app-server" {
-  source = "git@github.com:777leyla/module//CHILD/EC2"
+  source = "git@github.com/777leyla/terraform-module//CHILD/EC2"
 }
