@@ -8,5 +8,6 @@ module "app-vpc" {
 
 module "app-server" {
   source    = "git::https://github.com/777leyla/terraform-module//CHILD/EC2"
-  subnet_id = module.app-vpc.private_subnet.id
+  subnet_id = module.app-vpc.public_subnet_id
 }
+
